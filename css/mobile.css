@@ -1,0 +1,103 @@
+/*
+COMP1950: 	Course Site Redesign
+File:		Mobile.css
+Date:		June 30th, 2015
+Group:		Bill Kwok
+			Cindy Wang
+			Dennis Deveras
+			Neil MacDonald
+*/
+
+
+
+@media screen and (max-width: 1024px) {
+	#top-nav,
+	#container {
+		width: 728px;
+	}
+	.nav-list li {
+		margin: 0 25px;
+	}
+	#main {
+		margin-left: 220px;
+		width: 468px;
+	}
+	#side-nav {
+		width: 220px;
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 728px) {
+	#top-nav {
+		height: 70px;
+	}
+	#side-nav {
+		top: 70px;
+	}
+	#container {
+		padding-top: 70px;
+	}
+	#top-nav,
+	#container {
+		width: 100%;
+	}
+	#top-nav .nav-list {
+		margin: 20px 0 0 0;
+	}
+	.nav-list {
+		padding-left: 70px;
+		font-size: 0.9em;
+	}
+	.nav-list li {
+		margin: 0 10px;
+	}
+	.logo-item {
+		position: absolute;
+		left: 5px;
+		top: 45px;
+	}
+	.logo {
+		width: 50px;
+		height: 50px;
+		font-size: 0.9em;
+		padding-top: 12px;
+		margin-top: 0;
+	}
+	#main {
+		margin-left: 20px;
+		width: auto;
+	}
+	#side-nav {
+		width: 220px;
+		font-size: 1em;
+		transform: translate3d(-200px, 0, 0);
+		-webkit-transform: translate3d(-200px, 0, 0);
+		-moz-transform: translate3d(-200px, 0, 0);
+		-o-transform: translate3d(-200px, 0, 0);
+		-ms-transform: translate3d(-200px, 0, 0);
+		transition: 0.2s ease-in;
+	}
+	#side-nav:hover {
+		-webkit-transform: translate3d(0, 0, 0);
+	}
+}
+@media screen and (max-width: 400px) {
+	#top-nav {
+		height: 80px;
+	}
+	#side-nav {
+		top: 80px;
+	}
+	#container {
+		padding-top: 80px;
+	}
+	#top-nav .nav-list {
+		margin: 5px 0 0 0;
+		text-align: left;
+	}
+	.nav-list li {
+		margin: 0 0 5px 0;
+		display: block;
+	}
+}
