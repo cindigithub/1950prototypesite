@@ -55,7 +55,8 @@ ol {
 }
 
 .nav-list {
-	font-size: 1.1em;
+	font-size: 1.3em;
+	font-weight: bold;
 	margin: 0;
 	padding: 0;
 	text-align: center;
@@ -80,6 +81,9 @@ ol {
 
 .logo {
 	box-sizing: border-box;
+	font-family: serif;
+	font-size: 1.2em;
+	font-weight: bold;
 	background: #333;
 	display: block;
 	width: 75px;
@@ -154,4 +158,14 @@ ol {
 	margin-left: 5px;
 	font-family: verdana, sans-serif;
 	background-color: #f2f2f3;
+}
+
+a:link {
+	color:black;
+}
+a:active {
+	color:#ff8500;
+}
+a:hover {
+	color:#ff8500;
 }
