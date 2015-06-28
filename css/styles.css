@@ -8,7 +8,7 @@ Group:		Bill Kwok
 			Neil MacDonald
 */
 
-
+/* proto site */
 body {
 	font-family: Verdana, sans-serif;
 	font-size: 14px;
@@ -63,7 +63,8 @@ ol {
 }
 .nav-list li {
 	display: inline-block;
-	margin: 0 55px;
+	margin: 0 40px;
+	text-align: center;
 	padding: 0;
 }
 .nav-list a {
@@ -81,9 +82,6 @@ ol {
 
 .logo {
 	box-sizing: border-box;
-	font-family: serif;
-	font-size: 1.2em;
-	font-weight: bold;
 	background: #333;
 	display: block;
 	width: 75px;
@@ -142,7 +140,7 @@ ol {
 .collapsible li.open .sublist {
 	display: block;
 }
-.sublist {
+.collapsible .sublist {
 	display: none;
 	margin: 15px 0 20px 50px;
 }
@@ -168,4 +166,66 @@ a:active {
 }
 a:hover {
 	color:#ff8500;
+}
+
+h1 {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 5px 5px;
+	line-height: 100%;
+	background-color: #152737;
+	color: #fff;
+	margin-bottom: 5px;
+}
+
+h2 {
+	font-size: 17px;
+	font-weight: bold;
+	padding: 15px 15px;
+	line-height: 100%;
+	background-color: #385B9F;
+	color: #fff;
+	margin-bottom: 5px;
+	
+}
+
+h3 {
+	font-size: 15px;
+	font-weight: bold;
+	padding: 5px 15px;
+	line-height: 100%;
+	background-color: #92dce0;
+	margin-bottom: 5px;
+
+}
+
+.primary-list {
+	list-style-type: square;
+	padding-left: 50px;
+	line-height: 150%;
+
+}
+.primary-list {
+	word-wrap: break-word;
+}
+.sublist {
+
+	list-style-type: circle;
+	padding-left: 55px;
+	line-height: 150%;
+}
+
+.card_rectangle {
+	padding: 20px;
+}
+a:link {
+	text-decoration: none ;
+	color:#ff8500;;
+}
+p {
+	line-height: 150%;
+	padding: 10px 5px;
+}
+.nobullet {
+	list-style-type: none;
 }

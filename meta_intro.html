@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+
+<!-- links to stylesheets min & max width  -->
+		<link rel="stylesheet" type="text/css" href="/css/reset.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="/css/styles.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="/css/meta.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="/css/mobile.css" media="screen" />
+	
+	<!-- 	Print style sheet	-->
+			<link rel="stylesheet" type="text/css" href="/css/print.css" media="print" />
+					
+	<!--	Alternate style sheet	-->		
+			<link rel="alternate stylesheet" title="Overhead Style" href="/css/style_overhead.css" media="screen" />
+
+
+<!--
+COMP1950: 	Course Site Redesign
+File:		Meta_Introduction
+Date:		June 30th, 2015
+Group:		Bill Kwok
+			Cindy Wang
+			Dennis Deveras
+			Neil MacDonald
+-->
+
+</head>
+
+<body class="meta-page">
+	<div id="container">
+		<nav id="top-nav">
+			<ul class="nav-list">
+				<li><a href="/meta_intro.html">INTRODUCTION</a></li>
+				<li class="logo-item"><a href="/" class="logo logo-meta">KMWD designs</a></li>
+				<li><a href="/meta_rationale.html">RATIONALE</a></li>
+			</ul>
+		</nav>
+		<div id="wrapper">
+			<h2 class = "lightb">KMWD designs</h2>
+			<div class ="card_rectangle">
+				<p>KMWD designs would like to submit the following prototype site redesign for your consideration. In addition to viewing the prototype, please read through our main site to learn about our design process and decision-making rationale. On this page you will find a brief description of our site, prototype site, and design team biographies.</p>
+			</div>
+
+				 
+				<h2 class>The Sites</h2>
+					<div class ="card_rectangle">
+						<p>On our main site, you can view site maps of our site with prototype as well as a site map of how we envision the completed redesign to look. Our site also contains a page explaining our rationale: a description of all of the deliverables in our prototype and the reasons for our choices.</p>
+					</div>
+
+
+				
+				<h2>About Us</h2>
+					<div class ="card_rectangle"> 
+						<p>KMWD designs derives its name from the last names of its founding members.</p>
+					</div>	  
+
+			
+				<h3>Bill Kwok</h3>
+					<div class ="card_rectangle">
+						<p>Bill comes from a graphic design and photography background. He is a previous graduate of BCIT’s Desktop Publishing program. When he’s not photographing landscapes and sports cars, he can be seen saving the planet from his cat Tenshi.</p>
+							<h4>Project Responsibilities:</h4>
+								<ul class="primary-list">
+									<li>Layout and design mockup</li>
+									<li>Graphics creation</li>
+									<li>Final site analysis</li>
+									<li>CSS</li>
+									<li>Styling</li>
+									<li>Content development</li>
+									<li>Proto-site resource page</li>
+									<li>Design style guide</li>
+								</ul>
+					</div>
+
+			
+				<h3 class>Neil MacDonald</h3>
+					<div class ="card_rectangle">
+						<p>Neil is particularly interested in information architecture, UX and UI design, and web design. His hobbies include photography, travel, reading, building Blade Runner themed websites, and collecting degrees and certificates. BCIT’s Applied Web Development certificate will be the next certificate in his collection.</p>
+							<h4>Project Responsibilities:</h4>
+								<ul class="primary-list">
+									<li>Communications
+										<ul class="sublist">
+											<li>Project liaison</li>
+											<li>Project co-ordination</li>
+											<li>Wiki management</li>
+										</ul>
+									</li>
+									<li> Initial task analysis</li>
+									<li> PHP programming
+										<ul class="sublist">
+											<li>Used to develop the sample quiz</li>
+										</ul>
+									</li>
+									<li> JavaScript
+										<ul class="sublist">
+											<li>Programming and plugin selection</li>
+										</ul>
+									</li>
+									<li>Content development
+										<ul class="sublist">
+											<li>Created the site introduction and project rationale</li>
+										</ul>
+									</li>
+									<li>SEO
+										<ul class="sublist">
+											<li>Created the site introduction and project rationale</li>
+										</ul>
+									</li>
+									<li>Pre and Post usability testing</li>
+								</ul>
+					</div>
+			
+				<h3>Cindy Wang</h3>
+					<div class ="card_rectangle">
+						<p>An experience administrative and sales assistant in real estate. She is starting to feel like she needs some new challenges. She started Applied Web Development program in January 2015. When she is not working and studying, she likes watching TV, walking, and trying different kind of desserts.</p>
+							<h4>Project Responsibilities:</h4>
+								<ul class="primary-list">
+									<li>CSS style sheet
+										<ul class="sublist">
+											<li>Meta site</li>
+											<li>Proto site</li>
+										</ul>
+									</li>
+
+									</li>
+									<li>Meta site
+										<ul class="sublist">
+											<li>Introduction</li>
+										</ul>
+									</li>
+									<li>Proto site
+										<ul class="sublist">
+											<li>Lecture page</li>
+											<li>Site map</li>
+										</ul>
+									</li>
+									<li>GitHub Management</li>
+								</ul>
+					</div>
+		</div>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+	$(function() {
+		$('.collapsible').on('click', '.main-list-anchor', function(e) {
+			e.preventDefault();
+			var $anchor = $(e.currentTarget);
+			$anchor.parent('li').toggleClass('open');
+		});
+	});
+</script>
+</html>

@@ -99,5 +99,6 @@ Group:		Bill Kwok
 	.nav-list li {
 		margin: 0 0 5px 0;
 		display: block;
+		text-align: left;
 	}
 }

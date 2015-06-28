@@ -1,0 +1,66 @@
+/* Meta site*/
+
+h1 {
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	line-height: 100%;
+}
+
+h2 {
+	font-size: 17px;
+	color: #000;
+	font-weight: bold;
+	padding: 15px 15px;
+	line-height: 100%;
+	background-color: #92dce0;
+	margin-bottom: 5px;
+	border-top: 20px solid #fff;
+	border-bottom: 5px solid #fff;
+	
+}
+
+h3 {
+	font-size: 15px;
+	font-weight: bold;
+	padding: 5px 15px;
+	line-height: 100%;
+	background-color: #92dce0;
+	margin-bottom: 5px;
+	border-top: 20px solid #fff;
+	border-bottom: 5px solid #fff;
+	
+
+}
+
+h4 {
+	font-size: 13px;
+	font-weight: bold;
+	padding: 10px 15px;
+	line-height: 100%;
+}
+.logo-meta {
+	font-size: .75em;
+}
+p {
+	font-size: 13px;
+	line-height: 150%;
+}
+.card_rectangle {
+	padding: 20px;
+}
+.primary-list {
+	list-style-type: square;
+	padding-left: 50px;
+	line-height: 150%;
+	font-size: 13px;
+
+}
+.sublist {
+	list-style-type: circle;
+	padding-left: 55px;
+	line-height: 150%;
+	font-size: 13px;
+}
+
