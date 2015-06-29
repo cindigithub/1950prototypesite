@@ -30,14 +30,41 @@ h3 {
 	margin-bottom: 5px;
 	border-top: 20px solid #fff;
 	border-bottom: 5px solid #fff;
-	
+}
 
+.collapsible-header {
+	position: relative;
+	padding-left: 30px;
+	cursor: pointer;
+}
+.collapsible-header::before {
+	position: absolute;
+	content: ' ';
+	left: 10px;
+	top: 16px;
+	width: 0;
+	height: 0;
+	border-left: 7px solid #000;
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+}
+.collapsible-header.open::before {
+	position: absolute;
+	content: ' ';
+	left: 10px;
+	top: 20px;
+	width: 0;
+	height: 0;
+	border-right: 7px solid transparent;
+	border-left: 7px solid transparent;
+	border-top: 7px solid #000;
+	border-bottom: 0;
 }
 
 h4 {
 	font-size: 13px;
 	font-weight: bold;
-	padding: 10px 15px;
+	padding: 10px 5px;
 	line-height: 100%;
 }
 .logo-meta {
@@ -49,6 +76,12 @@ p {
 }
 .card_rectangle {
 	padding: 20px;
+}
+.collapse-rec {
+	display: none;
+}
+.collapse-rec.open {
+	display: block;
 }
 .primary-list {
 	list-style-type: square;

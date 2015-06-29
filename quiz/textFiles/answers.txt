@@ -8,3 +8,13 @@ They can be used to display the date when a page was last updated.
 true
 5. Which of the following is an example of SSI code. (1 point)
 c
+NeilA001234561. Name one type of HTTP Server. (1 point)
+apache
+2. What do the letters in the acronym WAMP stand for? (1 point)
+windows apache mysql php
+3. One use of SSIs is to display the current date. Briefly describe one other case where a developer might use SSIs. (6 points)
+blah, blah, blah
+4. Server behaviour can be customized using a file called .htaccess. (1 point)
+true
+5. Which of the following is an example of SSI code. (1 point)
+c

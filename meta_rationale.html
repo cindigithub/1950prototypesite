@@ -1,14 +1,28 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
+
+<!--
+COMP1950: 	Course Site Redesign
+File:		meta_rationale.html
+Date:		June 30th, 2015
+Group:		Bill Kwok
+			Cindy Wang
+			Dennis Deveras
+			Neil MacDonald	-->
+
+<title>KMWD: Project Rationale</title>
 <meta charset="utf-8">
 
+<!--	SEO meta tag with description	-->
+	<meta name="description" content="KMWD designs is a new web development company in Vancouver, Canada.
+	This is our design philosophy, a list of deliverables on our current project, and our rationale. ">	
+
 <!-- links to stylesheets min & max width  -->
-		<link rel="stylesheet" type="text/css" href="/css/reset.css" media="screen" />
-		<link rel="stylesheet" type="text/css" href="/css/styles.css" media="screen" />
-		<link rel="stylesheet" type="text/css" href="/css/mobile.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/meta.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen" />
 	
 	<!-- 	Print style sheet	-->
 			<link rel="stylesheet" type="text/css" href="/css/print.css" media="print" />
@@ -16,135 +30,106 @@
 	<!--	Alternate style sheet	-->		
 			<link rel="alternate stylesheet" title="Overhead Style" href="/css/style_overhead.css" media="screen" />
 
-
-<!--
-COMP1950: 	Course Site Redesign
-File:		
-Date:		June 30th, 2015
-Group:		Bill Kwok
-			Cindy Wang
-			Dennis Deveras
-			Neil MacDonald
--->
-
 </head>
 
-<body>
+<body class="meta-page">
 	<div id="container">
 		<nav id="top-nav">
 			<ul class="nav-list">
-				<li><a href="/">Home</a></li>
-				<li><a href="/">Lectures</a></li>
-				<li class="logo-item"><a href="/" class="logo">COMP 1950</a></li>
-				<li><a href="/">Resources</a></li>
-				<li><a href="/quiz">Quiz</a></li>
+				<li><a href="/index.html">INTRODUCTION</a></li>
+				<li><a href="meta_rationale.html">RATIONALE</a></li>
+				<li class="logo-item"><a href="/" class="logo logo-meta">KMWD designs</a></li>
+				<li><a href="meta_sitemaps.html">SITE MAPS</a></li>
+				<li><a href="home.html">PROTOTYPE</a></li>
 			</ul>
 		</nav>
-		<div id="wrapper" class="cf">
-			<nav id="side-nav">
-				<h2 class="side-nav-head">Class</h2>
-				<span class="list-head">Course Home</span>
-				<ol class="collapsible">
-					<li>
-						<a class="main-list-anchor" href="/">tools &amp; standards</a>
-						<ul class="sublist">
-							<li><a href="">Assignment 1</a></li>
+		<div id="wrapper">
+			<h2 class = "lightb">KMWD designs</h2>
+			<div class ="card_rectangle">
+				<p>This document details our process, design decisions, and their reasons.</p>
+			</div>
+			<h2 class="collapsible-header open">Preliminary Research</h2>
+			<div class="card_rectangle collapse-rec open">
+				<p>Prior to beginning our site redesign, we asked our client to complete our project questionnaire and conducted a usability study of the current site and looked at the sites of BCIT’s competitors (Langara College, Capilano College, MIT, and UBC). We had four users of the current COMP1950 website list what they liked and did not like about the website (see table 1). Their feedback guided our design to the prototype site.</p>
+				<table class="pros-cons-table">
+				<caption>Table 1: user feedback</caption>
+				<tr>
+					<th>PROS</th>
+					<th>CONS</th>
+				</tr>
+				<tr>
+					<td>
+						<ul class="primary-list">
+							<li>High contrast design is easy on the eyes</li>
+							<li>Easy to focus on – uncluttered</li>
+							<li>Not too many colours and the colours are used consistently so the site is easy to understand at a glance</li>
+							<li>Not too many colours and the colours are used consistently so the site is easy to understand at a glance</li>
+							<li>Content is broken up into clearly labeled sections</li>
+							<li>Sections are distinct – surrounded by white space</li>
+							<li>Site is well maintained – no link rot</li>
 						</ul>
-					</li>
-					<li><a class="main-list-anchor" href="/">html5</a>
-						<ul class="sublist">
-							<li><a href="">Exercise 1</a></li>
-							<li><a href="">Exercise 2</a></li>
-							<li><a href="">Exercise 3</a></li>
-							<li><a href="">Assignment 2</a></li>
+					</td>
+					<td>
+						<ul class="primary-list">
+							<li>Poor navigation</li>
+							<li>Users have to scroll through very long pages to find specific sections</li>
+							<li>There is only one “top of page” button on each page and it is at the bottom, there should be a “top of page” button at the end of each section</li>
+							<li>The menu should have some sort of nested navigation. If a user clicks "08 dynamic content" s/he should see a list of subheadings and be able to jump to that any subsection.</li>
+							<li>Navigation should be fixed and not scroll off-screen</li>
+							<li>Links to resources, exercises, and homework assignments are scattered throughout the site. This necessitates a lot of searching/scrolling to find the resource in question</li>
+							<li>Resources should be centralized on just a few pages (e.g. exercises, homework, links)</li>
+							<li>Electronic quizzes are distributed via e-mail which is not always delivered instantly</li>
 						</ul>
-					</li>
-					<li><a class="main-list-anchor" href="/">css techniques</a>
-						<ul class="sublist">
-							<li><a href="">Exercise 1</a></li>
-							<li><a href="">Exercise 2</a></li>
-							<li><a href="">Exercise 3</a></li>
-							<li><a href="">Assignment 3</a></li>
-						</ul>
-					</li>
-					<li><a class="main-list-anchor" href="/">css layouts</a>
-						<ul class="sublist">
-							<li><a href="">Exercise 1</a></li>
-							<li><a href="">Exercise 2</a></li>
-							<li><a href="">Exercise 3</a></li>
-							<li><a href="">Assignment 4</a></li>
-						</ul>
-					</li>
-					<li><a class="main-list-anchor" href="/">responsive css</a>
-						<ul class="sublist">
-							<li><a href="">Exercise 1</a></li>
-							<li><a href="">Exercise 2</a></li>
-							<li><a href="">Exercise 3</a></li>
-							<li><a href="">Assignment 5</a></li>
-						</ul>
-					</li>
-					<li><a class="main-list-anchor" href="/">javascript</a>
-						<ul class="sublist">
-							<li><a href="">Exercise 1</a></li>
-							<li><a href="">Exercise 2</a></li>
-							<li><a href="">Exercise 3</a></li>
-							<li><a href="">Assignment 6</a></li>
-						</ul>
-					</li>
-					<li><a class="main-list-anchor" href="/">dynamic content</a>
-						<ul class="sublist">
-							<li><a href="">Exercise 1</a></li>
-							<li><a href="">Exercise 2</a></li>
-							<li><a href="">Exercise 3</a></li>
-							<li><a href="">Assignment 7</a></li>
-						</ul>
-					</li>
-					<li><a class="main-list-anchor" href="/">templating, seo</a>
-						<ul class="sublist">
-							<li><a href="">Exercise 1</a></li>
-							<li><a href="">Exercise 2</a></li>
-							<li><a href="">Exercise 3</a></li>
-							<li><a href="">Assignment 8</a></li>
-						</ul>
-					</li>
-					<li><a class="main-list-anchor" href="/">methodology</a>
-						<ul class="sublist">
-							<li><a href="">Exercise 1</a></li>
-							<li><a href="">Exercise 2</a></li>
-							<li><a href="">Exercise 3</a></li>
-							<li><a href="">Assignment 9</a></li>
-						</ul>
-					</li>
-					<li><a class="main-list-anchor" href="/">project work</a>
-						<ul class="sublist">
-							<li><a href="">Exercise 1</a></li>
-							<li><a href="">Exercise 2</a></li>
-							<li><a href="">Exercise 3</a></li>
-							<li><a href="">Project</a></li>
-						</ul>
-					</li>
-				</ol>
-			</nav>
-			<div id="main">
-				<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque gravida nisl. Morbi blandit commodo dui, ac finibus ante luctus ut. Donec accumsan justo eu imperdiet commodo. Maecenas eleifend euismod leo sit amet dapibus. In varius tellus vitae dolor condimentum lobortis. Sed dui ex, sagittis nec metus in, dapibus cursus nisi. Aenean vestibulum, nisi sed hendrerit posuere, libero leo rutrum magna, molestie volutpat quam augue ut ex. Ut tincidunt mi sit amet ante blandit imperdiet. Nam ut diam mi.</p>
-				<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque gravida nisl. Morbi blandit commodo dui, ac finibus ante luctus ut. Donec accumsan justo eu imperdiet commodo. Maecenas eleifend euismod leo sit amet dapibus. In varius tellus vitae dolor condimentum lobortis. Sed dui ex, sagittis nec metus in, dapibus cursus nisi. Aenean vestibulum, nisi sed hendrerit posuere, libero leo rutrum magna, molestie volutpat quam augue ut ex. Ut tincidunt mi sit amet ante blandit imperdiet. Nam ut diam mi.</p>
-				<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque gravida nisl. Morbi blandit commodo dui, ac finibus ante luctus ut. Donec accumsan justo eu imperdiet commodo. Maecenas eleifend euismod leo sit amet dapibus. In varius tellus vitae dolor condimentum lobortis. Sed dui ex, sagittis nec metus in, dapibus cursus nisi. Aenean vestibulum, nisi sed hendrerit posuere, libero leo rutrum magna, molestie volutpat quam augue ut ex. Ut tincidunt mi sit amet ante blandit imperdiet. Nam ut diam mi.</p>
-				<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque gravida nisl. Morbi blandit commodo dui, ac finibus ante luctus ut. Donec accumsan justo eu imperdiet commodo. Maecenas eleifend euismod leo sit amet dapibus. In varius tellus vitae dolor condimentum lobortis. Sed dui ex, sagittis nec metus in, dapibus cursus nisi. Aenean vestibulum, nisi sed hendrerit posuere, libero leo rutrum magna, molestie volutpat quam augue ut ex. Ut tincidunt mi sit amet ante blandit imperdiet. Nam ut diam mi.</p>
-				<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque gravida nisl. Morbi blandit commodo dui, ac finibus ante luctus ut. Donec accumsan justo eu imperdiet commodo. Maecenas eleifend euismod leo sit amet dapibus. In varius tellus vitae dolor condimentum lobortis. Sed dui ex, sagittis nec metus in, dapibus cursus nisi. Aenean vestibulum, nisi sed hendrerit posuere, libero leo rutrum magna, molestie volutpat quam augue ut ex. Ut tincidunt mi sit amet ante blandit imperdiet. Nam ut diam mi.</p>
-				<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque gravida nisl. Morbi blandit commodo dui, ac finibus ante luctus ut. Donec accumsan justo eu imperdiet commodo. Maecenas eleifend euismod leo sit amet dapibus. In varius tellus vitae dolor condimentum lobortis. Sed dui ex, sagittis nec metus in, dapibus cursus nisi. Aenean vestibulum, nisi sed hendrerit posuere, libero leo rutrum magna, molestie volutpat quam augue ut ex. Ut tincidunt mi sit amet ante blandit imperdiet. Nam ut diam mi.</p>
-				<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque gravida nisl. Morbi blandit commodo dui, ac finibus ante luctus ut. Donec accumsan justo eu imperdiet commodo. Maecenas eleifend euismod leo sit amet dapibus. In varius tellus vitae dolor condimentum lobortis. Sed dui ex, sagittis nec metus in, dapibus cursus nisi. Aenean vestibulum, nisi sed hendrerit posuere, libero leo rutrum magna, molestie volutpat quam augue ut ex. Ut tincidunt mi sit amet ante blandit imperdiet. Nam ut diam mi.</p>
-				<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque gravida nisl. Morbi blandit commodo dui, ac finibus ante luctus ut. Donec accumsan justo eu imperdiet commodo. Maecenas eleifend euismod leo sit amet dapibus. In varius tellus vitae dolor condimentum lobortis. Sed dui ex, sagittis nec metus in, dapibus cursus nisi. Aenean vestibulum, nisi sed hendrerit posuere, libero leo rutrum magna, molestie volutpat quam augue ut ex. Ut tincidunt mi sit amet ante blandit imperdiet. Nam ut diam mi.</p>
-				<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque gravida nisl. Morbi blandit commodo dui, ac finibus ante luctus ut. Donec accumsan justo eu imperdiet commodo. Maecenas eleifend euismod leo sit amet dapibus. In varius tellus vitae dolor condimentum lobortis. Sed dui ex, sagittis nec metus in, dapibus cursus nisi. Aenean vestibulum, nisi sed hendrerit posuere, libero leo rutrum magna, molestie volutpat quam augue ut ex. Ut tincidunt mi sit amet ante blandit imperdiet. Nam ut diam mi.</p>
-				<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque gravida nisl. Morbi blandit commodo dui, ac finibus ante luctus ut. Donec accumsan justo eu imperdiet commodo. Maecenas eleifend euismod leo sit amet dapibus. In varius tellus vitae dolor condimentum lobortis. Sed dui ex, sagittis nec metus in, dapibus cursus nisi. Aenean vestibulum, nisi sed hendrerit posuere, libero leo rutrum magna, molestie volutpat quam augue ut ex. Ut tincidunt mi sit amet ante blandit imperdiet. Nam ut diam mi.</p>
-				<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque gravida nisl. Morbi blandit commodo dui, ac finibus ante luctus ut. Donec accumsan justo eu imperdiet commodo. Maecenas eleifend euismod leo sit amet dapibus. In varius tellus vitae dolor condimentum lobortis. Sed dui ex, sagittis nec metus in, dapibus cursus nisi. Aenean vestibulum, nisi sed hendrerit posuere, libero leo rutrum magna, molestie volutpat quam augue ut ex. Ut tincidunt mi sit amet ante blandit imperdiet. Nam ut diam mi.</p>
-				<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque gravida nisl. Morbi blandit commodo dui, ac finibus ante luctus ut. Donec accumsan justo eu imperdiet commodo. Maecenas eleifend euismod leo sit amet dapibus. In varius tellus vitae dolor condimentum lobortis. Sed dui ex, sagittis nec metus in, dapibus cursus nisi. Aenean vestibulum, nisi sed hendrerit posuere, libero leo rutrum magna, molestie volutpat quam augue ut ex. Ut tincidunt mi sit amet ante blandit imperdiet. Nam ut diam mi.</p>
-				<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque gravida nisl. Morbi blandit commodo dui, ac finibus ante luctus ut. Donec accumsan justo eu imperdiet commodo. Maecenas eleifend euismod leo sit amet dapibus. In varius tellus vitae dolor condimentum lobortis. Sed dui ex, sagittis nec metus in, dapibus cursus nisi. Aenean vestibulum, nisi sed hendrerit posuere, libero leo rutrum magna, molestie volutpat quam augue ut ex. Ut tincidunt mi sit amet ante blandit imperdiet. Nam ut diam mi.</p>
-				<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque gravida nisl. Morbi blandit commodo dui, ac finibus ante luctus ut. Donec accumsan justo eu imperdiet commodo. Maecenas eleifend euismod leo sit amet dapibus. In varius tellus vitae dolor condimentum lobortis. Sed dui ex, sagittis nec metus in, dapibus cursus nisi. Aenean vestibulum, nisi sed hendrerit posuere, libero leo rutrum magna, molestie volutpat quam augue ut ex. Ut tincidunt mi sit amet ante blandit imperdiet. Nam ut diam mi.</p>
-				<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque gravida nisl. Morbi blandit commodo dui, ac finibus ante luctus ut. Donec accumsan justo eu imperdiet commodo. Maecenas eleifend euismod leo sit amet dapibus. In varius tellus vitae dolor condimentum lobortis. Sed dui ex, sagittis nec metus in, dapibus cursus nisi. Aenean vestibulum, nisi sed hendrerit posuere, libero leo rutrum magna, molestie volutpat quam augue ut ex. Ut tincidunt mi sit amet ante blandit imperdiet. Nam ut diam mi.</p>
-				<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque gravida nisl. Morbi blandit commodo dui, ac finibus ante luctus ut. Donec accumsan justo eu imperdiet commodo. Maecenas eleifend euismod leo sit amet dapibus. In varius tellus vitae dolor condimentum lobortis. Sed dui ex, sagittis nec metus in, dapibus cursus nisi. Aenean vestibulum, nisi sed hendrerit posuere, libero leo rutrum magna, molestie volutpat quam augue ut ex. Ut tincidunt mi sit amet ante blandit imperdiet. Nam ut diam mi.</p>
-				<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque gravida nisl. Morbi blandit commodo dui, ac finibus ante luctus ut. Donec accumsan justo eu imperdiet commodo. Maecenas eleifend euismod leo sit amet dapibus. In varius tellus vitae dolor condimentum lobortis. Sed dui ex, sagittis nec metus in, dapibus cursus nisi. Aenean vestibulum, nisi sed hendrerit posuere, libero leo rutrum magna, molestie volutpat quam augue ut ex. Ut tincidunt mi sit amet ante blandit imperdiet. Nam ut diam mi.</p>
-				<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque gravida nisl. Morbi blandit commodo dui, ac finibus ante luctus ut. Donec accumsan justo eu imperdiet commodo. Maecenas eleifend euismod leo sit amet dapibus. In varius tellus vitae dolor condimentum lobortis. Sed dui ex, sagittis nec metus in, dapibus cursus nisi. Aenean vestibulum, nisi sed hendrerit posuere, libero leo rutrum magna, molestie volutpat quam augue ut ex. Ut tincidunt mi sit amet ante blandit imperdiet. Nam ut diam mi.</p>
-				<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque gravida nisl. Morbi blandit commodo dui, ac finibus ante luctus ut. Donec accumsan justo eu imperdiet commodo. Maecenas eleifend euismod leo sit amet dapibus. In varius tellus vitae dolor condimentum lobortis. Sed dui ex, sagittis nec metus in, dapibus cursus nisi. Aenean vestibulum, nisi sed hendrerit posuere, libero leo rutrum magna, molestie volutpat quam augue ut ex. Ut tincidunt mi sit amet ante blandit imperdiet. Nam ut diam mi.</p>
+					</td>
+				</tr>
+				</table>
+				<p>Based upon this feedback, we focused our redesign on the navigation and information architecture rather than the aesthetics of the course site. Our examination of competitor sites also showed similar aesthetic decisions (minimal colour schemes, high-contrast designs, etc.), which supports our decision to focus on navigation and information architecture. </p>
+			</div>					
+
+			<h2 class="collapsible-header open">Design Philosophy</h2>
+			<div class ="card_rectangle collapse-rec open"> 
+				<p>A core principle in information architecture is <a href="http://www.neil-macdonald.com/Search_Interface/usersCognitive.html" target="blank">cognitive load</a> which refers to the amount of mental effort required to perform a task. Since studying is a mentally intensive process to begin with, a website should be simple and elegant in order to minimize the load placed upon users. For this reason, we choose a very simple design, employing few colours or graphics. We also kept our navigation simple and consistent so that users would always know where they are within the site. </p>
+				<p>One could argue that this site, which teaches the latest techniques in HTML5 and CSS3, should employ as many of the techniques taught in the course as possible. We disagree with this opinion. While it is important that the content of this site covers such material, it is our professional philosophy that all design decisions should communicate or enhance the site’s message without being a distraction. It is sufficient that the content links to external sites which can demonstrate individual techniques and/or features. </p>
+			</div>	  
+			<h2 class="collapsible-header open">Deliverables</h2>
+			<div class ="card_rectangle collapse-rec open">
+				<p>This is a list of the features and functions of the site redesign and their corresponding rationale.</p>	
+				<h4>Navigation</h4>
+				<p><strong>Global navigation: </strong>this is a site-wide horizontal navigation bar which appears at the top of every page within the prototype site. In addition to displaying the site name, four primary links are shown: Home, myBCIT, Resources, and Quizzes.</p>		
+
+				<p><strong>Local navigation: </strong>this is a vertical navigation area which only appears on lecture pages. This navigation area displays each lecture and has nested navigation displaying the section heading for each lecture. This addresses the biggest complaint we received during our usability testing: users must scroll through long pages to find specific information.</p>
+
+				<h4>Display</h4>
+				<p>We have designed this site to display dynamic content, meaning that the display of content will change depending upon the screen size being used to view it. </p>
+
+				<p><strong>Large: </strong>we focused on large screens with a width of 1024px or more.</p>
+
+				<p><strong>Mobile:  </strong>we have provided a second stylesheet and layout for screens with a width of less than 1024px. As most notebooks and desktops now have displays of 1024px or greater, this display is primarily intended for tablets.</p>
+
+				<p><strong>Smartphones</strong>since this was not a specified design requirement, we chose not to develop a display for smartphones as this display size is not conducive to prolonged, focused reading. However, our use of flexible box layout provides us with the means of easily creating a smartphone display should our client require this in the future.</p>
+
+				<p><strong>Overhead: </strong>as required by our client, we have provided a stylesheet that presents a simplified layout with larger text suited for an overhead display.</p><p><strong>Print: </strong>required by our client, we have provided a print stylesheet which removes all unnecessary page elements (e.g. navigation and top of page links) and shows urls for all links contained with the page. </p>
+
+				<h4>CSS3</h4>
+				<p><strong>Flexible box layout: </strong>this feature allows different elements (divs) of a page to act as columns or rows. This feature is particularly useful in designing dynamic sites which can respond to and alter their layout according to different screen sizes.</p>
+
+				<h4>JQuery</h4>
+				<p>Sticky: we used the sticky plugin (http://stickyjs.com/) to fix our 
+				navigation areas in place. </p>
+
+				<h4>Quizzes</h4>
+				<p>This section was not a requirement of our client; however, our client expressed a desire to be able to post class quizzes to the course website. Since this issue came up during our initial user assessment and we possess the technical knowledge, we chose to implement our client’s request.</p>
+				<p>We used PHP scripts to control the behaviour of these pages. When a user clicks on the Quizzes link in the global navigation bar, she is taken to a login screen where she is prompted to enter her name and a password (BCIT student number). If this information is successfully entered, she is welcomed and shown a quiz start button. Once clicked, the user is taken to a page displaying the current week’s quiz. A timer is also set (are prototype is set to expire after 5 minutes). Once she has answered all of the questions, she can click a submit button. If her time has expired, she is shown a message to this effect. Otherwise, she is shown a message saying that her test has been successfully submitted and she is asked to logout. The user’s name, student number, the questions, and the user’s answers are written to a text file which the instructor can access for marking.</p>
+				<p>We used PHP programming for this section because it is necessary to use a server-side scripting language to record our user’s answers to a file located on the course server. Other server-side scripting languages could have been used, but PHP is an industry standard. </p>
+				<p>Note: the input fields for the quiz have been properly sanitized to prevent malicious users from launching attacks on the course website.</p>
+				<h4>Search Engine Optimization</h4>
+				<p>Search Engine Optimization or SEO is the process of designing pages semantically according to a set of best practices, so that search engines can find and accurately index the pages of a site. The following list details the SEO practices we employed on this site.</p>
+				<p><strong>Disallowing SEO: </strong>We used SEO on almost every page of our site. In the case of the quiz pages, SEO is limited to telling web crawlers to not index these pages in order to discourage students and visitors from accessing them.</p>
+				<p><strong>Meta Tag Descriptions: </strong>Each page has a meta tag description which summarizes the content of the page. This description helps people find this page using search engines by displaying the description in the search results.</p>
+				<p><strong>Page Titles: </strong>Pages titles not only provide a description of this current page, but also indicate the hierarchical location of the page. Titles use this convention: Institute: Course: Page or BCIT: COMP1950: Resources.</p>
+				<p><strong>URLs: </strong>URLs consist of words which are reflective of the page’s contents (often the final part of the page title) and when appropriate, show hierarchies. This provides meaning to indexers and is easier for users to remember.</p>
+				<p><strong>Captioning: </strong>Tables and images are captioned in order to provide semantic value to these features.</p>
+				<p><strong>Search Engines: </strong>As a service, when the production site is launched, we will submit the site to search engines to guarantee prompt indexing.</p>
 			</div>
 		</div>
 	</div>
@@ -152,10 +137,11 @@ Group:		Bill Kwok
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script>
 	$(function() {
-		$('.collapsible').on('click', '.main-list-anchor', function(e) {
+		$('body').on('click', '.collapsible-header', function(e) {
 			e.preventDefault();
-			var $anchor = $(e.currentTarget);
-			$anchor.parent('li').toggleClass('open');
+			var $header = $(e.currentTarget);
+			$header.toggleClass('open');
+			$header.next('.collapse-rec').toggleClass('open');
 		});
 	});
 </script>

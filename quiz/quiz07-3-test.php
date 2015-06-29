@@ -1,12 +1,49 @@
-<?PHP
-/*
+<!DOCTYPE html>
+<html>
+<head>
+<!--
 COMP1950: 	Course Site Redesign
-File:		quiz07-3-test.html
+File:		quiz07-3-test.php
 Date:		June 30th, 2015
 Group:		Bill Kwok
 			Cindy Wang
 			Dennis Deveras
-			Neil MacDonald*			*/
+			Neil MacDonald*		-->
+			
+<title>COMP1950: Quiz: Quiz #7</title>
+
+<meta charset="utf-8">
+
+<!--	SEO: disallow SEO/indexing on this page and following pages	-->
+<meta name="robots" content="noindex, nofollow">
+
+<!-- links to stylesheets min & max width  -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen" />
+	
+	<!-- 	Print style sheet	-->
+			<link rel="stylesheet" type="text/css" href="/css/print.css" media="print" />
+					
+	<!--	Alternate style sheet	-->		
+			<link rel="alternate stylesheet" title="Overhead Style" href="/css/style_overhead.css" media="screen" />
+
+</head>
+
+<body>
+	<div id="container">
+<!--	top navigation	-->	
+		<nav id="top-nav">
+			<ul class="nav-list">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="/">Lectures</a></li>
+				<li class="logo-item"><a href="/" class="logo">COMP 1950</a></li>
+				<li><a href="/resources.html">Resources</a></li>
+				<li><a href="/quiz07-1-login.html">Quiz</a></li>
+			</ul>
+		</nav>
+
+<?PHP
 
 //	cookie checks to see if user has not logged in. If not, redirect sign appears, otherwise quiz appears
 if(!isset($_COOKIE["student"])){
@@ -19,24 +56,6 @@ if(!isset($_COOKIE["quiztime"])){
 } 
 ?>
 
-<html>
-<head>
-<title>Quiz 7: Write</title>
-<meta charset="utf-8">
-
-<!-- links to stylesheets min & max width  -->
-		<link rel="stylesheet" type="text/css" href="styles/styles_L.css" media="only screen and (min-width: 701px)" media="screen" />
-		<link rel="stylesheet" type="text/css" href="styles/styles_M.css" media="only screen and (max-width:700px)" media="screen" />
-	
-	<!-- 	Print style sheet	-->
-			<link rel="stylesheet" type="text/css" href="styles/print.css" media="print" />
-					
-	<!--	Alternate style sheet	-->		
-			<link rel="alternate stylesheet" title="Overhead Style" href="styles/style_overhead.css" media="screen" />
-
-</head>
-
-<body>
 <!--	titles and instructions	-->
 <h1>COMP 1950 Intermediate Web Development and Design</h1>
 <h2>Quiz #7</h2>

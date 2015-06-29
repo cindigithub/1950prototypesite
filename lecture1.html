@@ -31,21 +31,13 @@ Group:		Bill Kwok
 
 <body>
 	<div id="container">
-		<nav id="top-nav">
-			<ul class="nav-list">
-				<li><a href="/">Home</a></li>
-				<li><a href="/">Lectures</a></li>
-				<li class="logo-item"><a href="/" class="logo">COMP 1950</a></li>
-				<li><a href="/">Resources</a></li>
-				<li><a href="/quiz">Quiz</a></li>
-			</ul>
-		</nav>
+		<!--#include file="ssi/navigation.inc" -->
 		<div id="wrapper" class="cf">
 			<nav id="side-nav">
 				<h2 class="side-nav-head">Class</h2>
 				<span class="list-head">Course Home</span>
 				<ol class="collapsible">
-					<li>
+					<li class="open">
 						<a class="main-list-anchor" href="/lecture1.html">tools &amp; standards</a>
 						<ul class="sublist">
 							<li><a href="">Assignment 1</a></li>
@@ -192,15 +184,6 @@ Group:		Bill Kwok
 			</div>
 		</div>
 	</div>
+	<!--#include file="ssi/footer.inc" -->
 </body>
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script>
-	$(function() {
-		$('.collapsible').on('click', '.main-list-anchor', function(e) {
-			e.preventDefault();
-			var $anchor = $(e.currentTarget);
-			$anchor.parent('li').toggleClass('open');
-		});
-	});
-</script>
 </html>
