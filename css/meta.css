@@ -32,6 +32,10 @@ h3 {
 	border-bottom: 5px solid #fff;
 }
 
+#container {
+	background: transparent;
+}
+
 .collapsible-header {
 	position: relative;
 	padding-left: 30px;
@@ -96,4 +100,11 @@ p {
 	line-height: 150%;
 	font-size: 13px;
 }
-
+.sitemap-list ul,
+.sitemap-list {
+	margin: 10px 0 10px 25px;
+	list-style: square;
+}
+.sitemap-list li {
+	margin: 0 0 15px 0;
+}
