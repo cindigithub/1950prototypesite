@@ -1,0 +1,69 @@
+/*
+COMP1950: 	Course Site Redesign
+File:		Styles.css
+Date:		June 30th, 2015
+Group:		Bill Kwok
+			Cindy Wang
+			Dennis Deveras
+			Neil MacDonald
+*/
+
+
+
+/*Responsiveness starts here*/
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 12px;
+    }
+    figure {
+        /*make the figure images 100% wide, and stack on top of content*/
+        margin-right: 0;
+        width: 100%;
+        float: none;
+    }
+}
+@media screen and (max-width: 720px) {
+    .nav-list li {
+        /*make the navigation items stack*/
+        display: block;
+    }
+}
+
+/*Print styles starts here*/
+@media print {
+    .main-header {
+        /*display the main header since in print we don't have background images*/
+        display: block;
+    }
+    .nav-list {
+        /*make sure nav list doesn't have a background color*/
+        background: none;
+    }
+    nav {
+        /*hide the nav as we won't need it when printing*/
+        display: none;
+    }
+    header {
+        height: 100px;
+    }
+    /*
+    select anchor tags with the target="_blank" attribute, i.e. external links
+    use the ::after pseudo element to add content to the matched elements
+    */
+    a[target="_blank"]::after {
+        /*use the attr CSS function to add the href value of the anchor as content to the "after"
+        pseudo element*/
+        content: ' (' attr(href) ')';
+        display: inline;
+    }
+}
+/*
+http://nicolasgallagher.com/micro-clearfix-hack/
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-size
+http://www.w3schools.com/cssref/css_colors_legal.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-size
+https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow
+https://developer.mozilla.org/en-US/docs/Web/CSS/::after
+https://developer.mozilla.org/en/docs/Web/CSS/attr
+https://developer.mozilla.org/en/docs/Web/CSS/content
+*/

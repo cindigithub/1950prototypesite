@@ -23,10 +23,10 @@ Group:		Bill Kwok
 		<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen" />
 	
 	<!-- 	Print style sheet	-->
-			<link rel="stylesheet" type="text/css" href="/css/print.css" media="print" />
+			<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
 					
 	<!--	Alternate style sheet	-->		
-			<link rel="alternate stylesheet" title="Overhead Style" href="/css/style_overhead.css" media="screen" />
+			<link rel="alternate stylesheet" title="Overhead Style" href="css/style_overhead.css" media="screen" />
 
 </head>
 			
@@ -36,10 +36,10 @@ Group:		Bill Kwok
 		<nav id="top-nav">
 			<ul class="nav-list">
 				<li><a href="home.html">Home</a></li>
-				<li><a href="/">Lectures</a></li>
-				<li class="logo-item"><a href="/" class="logo">COMP 1950</a></li>
-				<li><a href="/resources.html">Resources</a></li>
-				<li><a href="/quiz07-1-login.html">Quiz</a></li>
+				<li><a href="">Lectures</a></li>
+				<li class="logo-item"><a href="" class="logo">COMP 1950</a></li>
+				<li><a href="resources.html">Resources</a></li>
+				<li><a href="quiz07-1-login.html">Quiz</a></li>
 			</ul>
 		</nav>
 
