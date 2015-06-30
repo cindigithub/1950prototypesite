@@ -263,4 +263,26 @@ footer {
 	line-height: 25px;
 	text-align: center;
 	font-size: .85em;
+<<<<<<< Updated upstream
+=======
+}
+
+td {
+	padding: 20px;
+}
+
+.banner {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+a:link {
+	color:black;
+}
+a:active {
+	color:#ff8500;
+}
+a:hover {
+	color:#ff8500;
+>>>>>>> Stashed changes
 }
